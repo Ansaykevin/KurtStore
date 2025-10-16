@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9191b43457.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha384-..." crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section class="Header">
+        <nav>
+          <div class="header-main">
+             <div class="header-left">
+                 <div class="header-content">
+                     <p class="left-text">Kurt</p>
+                     <p class="left-text2">Store</p>
+                 </div>
+             </div>
+
+             <div class="header-rigth">     
+                <div class="right-btn">
+                    <button>
+                        <p>Order now</p>
+                    </button>
+                </div>
+             </div>
+         </div>
+        </nav>
+    </section>
+
+        <section class="section-jscript">
+            <div class="contact-flex">
+                <div class="contact-display">
+                   <div class="contact-maintop">
+                    <div class="contact-top">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <h3 class="contact-info">Location</h3>
+                        <a href="https://maps.app.goo.gl/NKWG6DX4FG1nsjDR7"target="_blank">
+                          <p>Poblacion San Antonio N.E</p>
+                        </a>
+                    </div>
+
+                    <div class="contact-left2">
+                         <i class="fa-solid fa-phone"></i>
+                         <h3 class="contact-info">Phone no.</h3>
+                         <a href="tel:09267249449"target="_blank">
+                           <p>09300098333</p>
+                         </a>
+                    </div>
+
+                   <div class="contact-left3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h3 class="contact-info">Email Address</h3>
+                        <a href="https://mail.google.com/mail/u/0/#inbox"target="_blank">
+                          <p>kurtrusselzpata14@gmail.com</p>
+                        </a>                         
+                    </div>
+                   </div>
+                    <div class="contact-bottom">
+                        <span>                        
+                            <img src="/assets/GCash-Logo-tumb.png" alt=""> 
+                            <p>#09300098333</p>
+                            <p class="contact-name">KURT RUSSEL DE OCAMPO ZAPATA</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+    <section class="home-banner">
+            <div class="home-flex">
+                <div class="home-border">
+                    <div class="home-text1">
+                        <h1>STREET FOOD MENU</h1>
+                    </div>
+                    <div class="home-text2">
+                        <p class="satisfy-text">Satisfy your cravings with our delicious offerings of streets foods, burgers and fries </p>
+                    </div>
+                    <a href="menu.html">
+                    <div class="home-btn">
+                        <button>
+                            <p>Menu</p>
+                        </button>
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+       
+    </section>
+
+    <section class="info">
+            <div class="aside-border">
+                  <div class="aside-title">
+                        <div class="aside-top">
+                            <h2 class="aside-txt">Always available:</h2>
+                        </div>
+                    </div>
+               <div class="aside-display">                 
+                    <div class="aside-flex">
+                        <p>Street foods</p>                
+                    </div>
+
+                    <div class="aside-flex1">
+                        <p>Drinks</p>                
+                    </div>
+
+                    <div class="aside-flex">
+                        <p>Burger and fries</p>                
+                    </div>
+                </div>
+            </div>
+    </section>
+    
+        <footer>
+            <div class="footer-flex">
+                <div class="footer-left">
+                    <p>Kurt Store Template Kit by KevinAnsay</p>
+                </div>
+
+                <div class="time">
+                    <div class="time-container">
+                        <div class="clock">
+                            <span id="hrs">00</span>
+                            <span>:</span>
+                            <span id="min">00</span>
+                            <span>:</span>
+                            <span id="sec">00</span>
+                        </div>
+                    </div>
+                </div>
+        
+        </footer>
+        
+        <script>
+
+        let hrs = document.getElementById("hrs");
+        let min = document.getElementById("min");
+        let sec = document.getElementById("sec");
+
+        setInterval(()=>{
+               let currentTime = new Date();
+        
+               hrs.innerHTML = (currentTime.getHours()<10?"0":"") + currentTime.getHours();
+               min.innerHTML = (currentTime.getMinutes()<10?"0":"") + currentTime.getMinutes();
+               sec.innerHTML = (currentTime.getSeconds()<10?"0":"") + currentTime.getSeconds();
+        },1000)
+
+        let currentTime = new Date();
+        
+        hrs.innerHTML = currentTime.getHours();
+        min.innerHTML = currentTime.getHours();
+        sec.innerHTML = currentTime.getHours();
+        </script>
+
+</body>
+<script src="index.js"></script>
+</html>
+ 
