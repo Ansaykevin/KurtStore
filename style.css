@@ -279,7 +279,7 @@ div.aside-border{
 }
 div.aside-display{
     margin-top: 30px;
-  
+    margin-bottom: 100px;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -492,12 +492,20 @@ div.clock span{
 
     
 }
+@media only screen and (max-width: 700px){
+    div.contact-display{
+        display: block;
+    }
+}
 @media only screen and (max-width: 650px){
     div.home-text1 h1{
         font-size: 50px;
     }
     section.info{
         max-width: 625px;
+    }
+    div.contact-display{
+        display: block;
     }
 }
 @media only screen and (max-width: 600px){
